@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:contentDescription="image"
+        android:src="@drawable/img_main_page"
+        />
+    <LinearLayout
+        android:id="@+id/ll_start"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20sp"
+        android:gravity="center"
+        android:background="@drawable/item_color_accent_border_ripple_background"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="START"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            >
+        </TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           >
+           <LinearLayout
+               android:id="@+id/llBMI"
+               android:layout_width="70dp"
+               android:layout_height="70dp"
+               android:layout_gravity="center"
+               android:background="@drawable/item_circular_color_accent_background"
+               android:gravity="center">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="BMI"
+                   android:textColor="#FFFFFF"
+                   android:textSize="22sp"
+                   android:textStyle="bold" />
+           </LinearLayout>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:text="Calculator"
+               android:textColor="@color/colorAccent"
+               android:textSize="22sp"
+               android:textStyle="bold" />
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/llHistory"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/item_circular_color_accent_background"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_calendar"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="History"
+                android:textColor="@color/colorAccent"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+</LinearLayout>
+
+
+
+</LinearLayout>
